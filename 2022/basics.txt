@@ -1,5 +1,6 @@
+Dictionaries: get
+
 OOP: classes, inheritance, 
 
 Files: reading, writing, etc.
 
-q%84J@qx4A

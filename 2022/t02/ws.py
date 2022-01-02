@@ -8,17 +8,17 @@ import configparser
 import datetime
 import uuid
 
-# config = configparser.ConfigParser()
-# config.read('calconfig.ini')
+config = configparser.ConfigParser()
+config.read('calconfig.ini')
 
-# # define vcalendar container
-# myCal = ics.Calendar()
-# for key in config['CALENDAR']:
-#     if key.upper() == 'RAWLINES':
-#         with open(config['CALENDAR']['RAWLINES'],'r') as f1:
-#             myCal.add_raw_text(f1.read())
-#     else:
-#         myCal.add_raw_text(config['CALENDAR'][key]+'\n')
+# define vcalendar container
+myCal = ics.Calendar()
+for key in config['CALENDAR']:
+    if key.upper() == 'RAWLINES':
+        with open(config['CALENDAR']['RAWLINES'],'r') as f1:
+            myCal.add_raw_text(f1.read())
+    else:
+        myCal.add_raw_text(config['CALENDAR'][key]+'\n')
 
 search_url = config['WEB']['URL']
 schedule_page = requests.get(search_url)

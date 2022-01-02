@@ -32,5 +32,9 @@ To do so, we need to:
 - show ics.py (help(ics))
 
 ## The structure of an HTML page
-- A sample page (sample.html)
+- A sample page (sample.html): tags, content, presentation (.css)
+- Tree structure of a web page
+- beautifulsoup
+- sample_ws.py
+- everything is an object. To get the content, .string
 
