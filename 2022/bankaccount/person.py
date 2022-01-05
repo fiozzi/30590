@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat May  9 18:15:35 2020
-
 @author: Iozzi
 """
 import datetime

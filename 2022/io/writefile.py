@@ -30,8 +30,7 @@ in_filename = 'numbers.txt'
 out_filename = 'smallnumbers.txt'
 threshold = 50
 
-with open(in_filename,'r') as f_in, \
-    open(out_filename,'w') as f_out:
+with open(in_filename,'r') as f_in, open(out_filename,'w') as f_out:
     while True:
         # read one line from imput
         line = f_in.readline()
