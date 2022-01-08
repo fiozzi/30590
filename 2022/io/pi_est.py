@@ -8,7 +8,6 @@ Created on Tue Mar 10 22:37:08 2020
 import random
 import math
 
-from numpy.core.shape_base import block
 random.seed()
 
 import matplotlib.pyplot as plt

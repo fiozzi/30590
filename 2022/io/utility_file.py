@@ -4,6 +4,25 @@
 @author: Iozzi
 """
 
+def print_file_3(filename, nlines=0):
+    plines = 0
+    try:
+        with open(filename,'r') as f: # DOES NOT ALWAYS WORK
+            while ((not nlines) or plines <= nlines):
+                try:
+                    line = f.readline()
+                    if line:
+                        # line is not exmpty
+                        plines += 1
+                        print(line.strip())
+                    else:
+                        # reached the end of the file
+                        break
+                except Exception as e:
+                    print(f'*** Error: {e}')
+    except Exception as e:
+        print(e)
+
 def print_file(filename):
     with open(filename,'r') as fp:
         # prints the filename

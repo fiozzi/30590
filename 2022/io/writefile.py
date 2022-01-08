@@ -15,8 +15,9 @@ with open(out_filename,'w') as file_out:
         rn = random.randint(1,100)
         line_to_write = str(rn) + '\n'
         file_out.writelines(line_to_write)
-        
-utility_file.print_file(out_filename)
+
+print('Numbers')
+utility_file.print_file_3(out_filename)
 
 with open(out_filename,'a') as file_out:
     for i in range(5):
@@ -24,7 +25,8 @@ with open(out_filename,'a') as file_out:
         line_to_write = str(rn) + '\n'
         file_out.writelines(line_to_write)
  
-utility_file.print_file(out_filename)
+print('More Numbers')
+utility_file.print_file_3(out_filename)
 
 in_filename = 'numbers.txt'
 out_filename = 'smallnumbers.txt'
@@ -49,6 +51,8 @@ with open(in_filename,'r') as f_in, open(out_filename,'w') as f_out:
         else:
             break
 
-utility_file.print_file(in_filename)
-utility_file.print_file(out_filename)
+print('All Numbers')
+utility_file.print_file_3(in_filename)
+print('Small Numbers')
+utility_file.print_file_3(out_filename)
 
