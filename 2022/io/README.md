@@ -34,4 +34,8 @@
 - write_file.py
 - unicode(?)
 - the anonymizer task
+- reading and writing csv files
+- presenting the examples. Groupwork
+- Wordle! (TBD)
+
 

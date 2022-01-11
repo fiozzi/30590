@@ -54,8 +54,6 @@ def anonymize(
                     else:
                         cols_to_keep.append(headers.index(col))
                 # write new header to file
-                # print(cols_to_keep)
-                # print(cols_to_remove)
                 anon_header = [new_header]
                 [anon_header.append(headers[col]) for col in cols_to_keep]
                 line_writer.writerow(anon_header)

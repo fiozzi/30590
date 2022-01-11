@@ -97,4 +97,4 @@ def anonymize2(f_in, k, sep = ',', header = 'ID', f_out = 'out.txt', t_out = 'ta
 
 if __name__ == '__main__':
     anonymize('midterm.txt',2)
-    anonymize2('midterm.txt', k=2)
+    # anonymize2('midterm.txt', k=2)

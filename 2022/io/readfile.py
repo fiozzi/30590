@@ -76,7 +76,7 @@ with open(filename, newline='', encoding='utf-8') as f:
 EXERCISE: the file MSFT.csv is given with the daily data of Microsoft stock on the
 US stock market in 2019. Write a function 
 
-longest_string()
+largest_variation()
 
 that given 
 a filename (with the same format as MSFT.csv), 
