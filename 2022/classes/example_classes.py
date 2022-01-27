@@ -46,4 +46,5 @@ employees.append(e1)
 
 print('\n'.join(map(str,persons)))
 print('\n'.join(map(str,employees)))
+print(e1.age())
 

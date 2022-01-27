@@ -62,6 +62,8 @@ class Employee(Person):
         
 if __name__ == '__main__':
     p1 = Person('Mickey', 'Mouse', datetime.datetime.strptime('19300113','%Y%m%d'))
+    print(dir(Person))
+    print(dir(p1))
     print(type(p1))
     print(p1)
     p2 = Person('Donald', 'Duck', datetime.datetime.strptime('19380207','%Y%m%d'))
