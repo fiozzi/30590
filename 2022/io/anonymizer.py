@@ -3,7 +3,6 @@
 
 @author: Iozzi
 """
-import utility_file
 import csv
 
 def split_at(s, sep, n):
@@ -72,7 +71,7 @@ def anonymize(
                 write_anonymized(line_reader,cols_to_keep,line_writer)
                     
     except Exception as e:
-        print('Error in opening cvs and/or anon file: {e.errno}, {e.strerror}, {e.filename}')
+        print('Error in opening csv and/or anon file: {e.errno}, {e.strerror}, {e.filename}')
 
 def write_anonymized(linereader, cols_to_keep, line_writer, table_writer=None, cols_to_remove=[] ):
     row_counter = 0
